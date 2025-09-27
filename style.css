@@ -1,0 +1,72 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Orbitron', sans-serif; }
+
+/* Body & Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+header { text-align: center; margin-bottom: 40px; }
+header h1 { font-size: 3rem; color: #ff6f91; text-shadow: 0 0 10px #ff6f91, 0 0 20px #ff6f91; }
+header p { font-size: 1.2rem; color: #f9f871; margin-top: 5px; }
+
+/* Nickname Box */
+.nickname-box {
+  display: flex; flex-direction: column; align-items: center; gap: 15px;
+  margin-bottom: 40px; width: 100%; max-width: 500px;
+  background: rgba(255,255,255,0.05); padding: 20px; border-radius: 20px; backdrop-filter: blur(10px);
+}
+.nickname-box input[type="text"],
+.nickname-box input[type="number"] {
+  width: 100%; padding: 15px; border-radius: 12px; border: none;
+  font-size: 1.1rem; text-align: center; outline: none;
+  background: rgba(255, 255, 255, 0.1); color: #fff; transition: all 0.3s ease;
+}
+.nickname-box input:focus { box-shadow: 0 0 15px #f9f871; }
+
+/* Buttons */
+.nickname-box .buttons { display: flex; gap: 15px; }
+.nickname-box button {
+  padding: 12px 25px; border: none; border-radius: 12px; font-size: 1rem;
+  cursor: pointer; color: #fff; background: linear-gradient(90deg, #ff6f91, #f9f871);
+  transition: all 0.3s ease;
+}
+.nickname-box button:hover { transform: scale(1.05); box-shadow: 0 0 15px #ff6f91, 0 0 25px #f9f871; }
+
+/* Instructions */
+.nickname-box .instructions { font-size: 0.9rem; color: #ffd700; }
+
+/* Output Section */
+#output { width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center; }
+#output h2 { font-size: 1.6rem; margin-bottom: 15px; color: #ffb347; }
+
+/* Nickname Cards */
+#nicknameResult { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.nicknameItem {
+  font-size: 1.5rem; padding: 12px 20px; border-radius: 12px;
+  background: rgba(255,255,255,0.05); color: #fff; cursor: pointer;
+  transition: all 0.3s ease; text-shadow: 0 0 5px #ff6f91, 0 0 10px #f9f871;
+}
+.nicknameItem:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: rgba(255,255,255,0.15);
+  text-shadow: 0 0 10px #ff6f91, 0 0 20px #f9f871, 0 0 30px #ff6f91;
+}
+
+/* Footer */
+footer { margin-top: 50px; text-align: center; font-size: 0.9rem; color: #aaa; }
+footer a { color: #f9f871; text-decoration: none; transition: all 0.3s ease; }
+footer a:hover { color: #ff6f91; text-shadow: 0 0 5px #ff6f91; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 { font-size: 2.5rem; }
+  .nicknameItem { font-size: 1.3rem; padding: 10px 15px; }
+}

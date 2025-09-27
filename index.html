@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOKKI-FF | Nickname Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KOKKI-FF</h1>
+    <p>Stylish Free Fire Nickname Designer 🔥</p>
+  </header>
+
+  <main>
+    <section class="nickname-box">
+      <input type="text" id="nicknameInput" placeholder="Enter your name...">
+      <label for="countInput">Number of nicknames to generate:</label>
+      <input type="number" id="countInput" min="1" value="10">
+      <div class="buttons">
+        <button onclick="generateNickname()">Generate Nickname</button>
+        <button onclick="generateRandomNickname()">Random Nickname</button>
+      </div>
+      <p class="instructions">Click a nickname to copy it!</p>
+    </section>
+
+    <section id="output">
+      <h2>Your Nicknames:</h2>
+      <div id="nicknameResult">---</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AB~SQUAD 1521 | KOKKI-FF</p>
+    <p>
+      <a href="terms.html" target="_blank">Terms & Conditions</a> | 
+      <a href="privacy.html" target="_blank">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
